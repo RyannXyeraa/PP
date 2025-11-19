@@ -1,0 +1,86 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #1e1f25;
+  color: #fff;
+  text-align: center;
+}
+
+/* Header */
+.judul {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.judul h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sub {
+  margin-top: -6px;
+  font-size: 14px;
+  color: #cfd6df;
+}
+
+/* Gallery Style — HP default */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 20px auto;
+  width: 92%;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 7px 20px rgba(0,0,0,0.45);
+}
+
+/* Desktop Mode */
+@media (min-width: 700px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 80%;
+  }
+}
+
+/* Footer */
+.more h3 {
+  font-weight: 400;
+  margin-top: 30px;
+  color: #d3dae4;
+}
+
+/* Discord Button */
+.discord {
+  margin-top: 12px;
+  padding: 10px 22px;
+  font-size: 17px;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: .25s ease;
+  margin: 10px;
+}
+
+.discord:hover {
+  background: rgba(255, 255, 255, 0.17);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
